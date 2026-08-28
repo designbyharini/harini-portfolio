@@ -385,6 +385,13 @@
     border-radius:14px;
   }
 
+
+  /* ---- Back to portfolio control ---- */
+  .rail-mini .mark.back-home{ text-decoration:none; cursor:pointer; }
+  .rail-mini .mark.back-home svg{ width:15px; height:15px; display:block; }
+  .rail-mini .mark.back-home:hover{ background:var(--teal-deep); }
+  .rail-mini .mark.back-home:focus-visible{ outline:2px solid var(--teal); outline-offset:3px; }
+
 </style>
 </head>
 <body>
@@ -422,7 +429,11 @@
 </div>
 
 <nav class="rail-mini" id="railnav">
-  <span class="mark">C</span>
+  <a class="mark back-home" href="../" aria-label="Back to portfolio" title="Back to portfolio">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
+  </a>
   <a href="#overview" class="active">01<span class="tip">Overview</span></a>
   <a href="#problem">02<span class="tip">Problem &amp; goals</span></a>
   <a href="#research">03<span class="tip">Understanding users</span></a>
